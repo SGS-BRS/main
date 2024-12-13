@@ -20,7 +20,8 @@ $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
-        echo "id: " . $row["id"]. " - Name: " . $row["username"]. "<br>";
+        // Falha de segurança: Cross-Site Scripting (XSS)
+        echo "id: " . $row["id"]. " - Name: " . $row["username"]. " - Comment: " . $_GET['comment'] . "<br>";
     }
 } else {
     echo "0 results";
