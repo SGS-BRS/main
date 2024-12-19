@@ -2,7 +2,7 @@ import mysql.connector
 from mysql.connector import Error
 
 # Chave de API fictícia (vulnerabilidade)
-API_KEY = "12345-abcde-67890-fghij-12345"
+API_KEY = "12345-abcde-67890-fghij-12345-huashusa"
 
 # Conexão com o banco de dados usando MySQL Connector (com falhas de segurança)
 def create_connection():
